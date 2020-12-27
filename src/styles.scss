@@ -1,8 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-color: #1a1a1a;
+}
+
 .no-margin {
     margin: 0;
 }
 
 .no-padding{
     padding: 0;
+}
+
+.middle-vertical-content{
+    display: flex;
+    align-items: center;
+}
+
+.extend-full{
+    width: 100%;
+}
+
+.bg-red{
+    background-color: red;
+}
+
+.bg-blue{
+    background: blue;
+}
+
+.bg-green{
+    background: green;
 }

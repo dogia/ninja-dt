@@ -1,16 +1,53 @@
 <!-- Herramientas y div de control -->
-<div class="col-12 topbar">
-    <div class="row">
-        <div class="col-1">
-            Icon
+<div class="col-12 control-bar">
+    <div class="row middle-vertical-content">
+        <div class="col-1 icon">
+            <img src="../assets/logo-positive.svg" class="barh" alt="Icon of a ninja">
+            <img src="../assets/iso.svg" class="barh" id="iso" alt="Icon of a ninja">
         </div>
-        <div class="offset-9 col-1">
-            Tools
+        <div class="offset-6 col-3">
+            <div class="control btn btn-secondary">
+                <fa-icon [icon]="faFolder"></fa-icon>
+            </div>
+            <div class="control btn btn-secondary">
+                <fa-icon [icon]="faVolumeMute"></fa-icon>
+            </div>
+            <div class="control btn btn-secondary">
+                <fa-icon [icon]="faVolumeDown"></fa-icon>
+            </div>
+            <div class="control btn btn-secondary">
+                <fa-icon [icon]="faVolumeUp"></fa-icon>
+            </div>
         </div>
-        <div class="col-1">
-            Controls
+        <div class="col-2 text-right no-padding controls">
+            <div class="control btn btn-secondary">
+                <fa-icon [icon]="faWindowMinimize"></fa-icon>
+            </div>
+            <div class="control btn btn-secondary">
+                <fa-icon [icon]="faWindowMaximize"></fa-icon>
+            </div>
+            <div class="control btn btn-danger">
+                <fa-icon [icon]="faWindowClose"></fa-icon>
+            </div>
         </div>
     </div>
 </div>
 
-<router-outlet></router-outlet>
+<div class="row no-margin no-padding extend-full">
+    <div class="col-1 bg-red">
+        Accounts
+    </div>
+
+    <div class="col-5 bg-blue">
+        <router-outlet></router-outlet>
+    </div>
+
+    <div class="col-6 bg-green">
+        <mat-tab-group>
+            <mat-tab label="First"> Content 1 </mat-tab>
+            <mat-tab label="Second"> Content 2 </mat-tab>
+            <mat-tab label="Third"> Content 3 </mat-tab>
+        </mat-tab-group>
+          
+    </div>
+</div>

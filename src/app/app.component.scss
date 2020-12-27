@@ -1,0 +1,26 @@
+.barh{
+    height: 1.5em;
+    width: auto;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+#iso{
+    position: absolute;
+    top: 0.25em;
+    margin-left: 0.25em;
+}
+
+@media only screen and (min-width:768px){
+    .control-bar{
+        background: #6c757d;
+        color: #ffffff;
+        border-bottom: 1px solid #707070;
+    }
+    .controls{
+        min-width: 6em;
+    }
+    .control{
+        display: inline-block;
+        border-radius: 0 !important;
+    }
+}
