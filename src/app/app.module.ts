@@ -1,26 +1,27 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-// Tabs
-import {MatTabsModule} from '@angular/material/tabs';
+// Tool tabs
+import { ToolsBotComponent } from './components/tools-bot/tools-bot.component';
 
 // FontAwesome
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ToolsBotComponent
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
     AppRoutingModule,
     FontAwesomeModule,
-    MatTabsModule
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
